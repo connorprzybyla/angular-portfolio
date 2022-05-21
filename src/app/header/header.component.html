@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button routerLink="/home"> Home </a>
+      <a mat-button routerLink="/contact"> Contact </a>
+      <a mat-button routerLink="/services"> Services </a>
+      <a mat-button routerLink="/projects">Projects</a>
+      <mat-slide-toggle
+        [checked]="isDarkTheme | async"
+        (change)="toggleDarkTheme($event.checked)"
+      ></mat-slide-toggle>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,21 @@
+@import "~@angular/material/theming";
+
+@mixin tile-theme($theme) {
+  $accent: map-get($theme, primary);
+  $background: map-get($theme, background);
+  $background-color: mat-color($background, card);
+
+  #home-content-wrapper {
+    background-color: mat-color($accent);
+    // border: 1rem solid $background-color;
+    // padding: 2rem;
+    // min-height: 200px;
+    // min-width: 200px;
+
+    // p {
+    //   color: $background-color;
+    //   line-height: 2.4rem;
+    //   font-size: 2rem;
+    // }
+  }
+}
